@@ -118,7 +118,14 @@
   height: 100%;
   width: 100%;
   border: none;
-  background-color: #9c530f;
   color: #fff;
+}
+
+.table tr td .edit {
+  background-color: #0938d1;
+}
+
+.table tr td .delet {
+  background-color: #ee2309;
 }
 /*# sourceMappingURL=main.css.map */
