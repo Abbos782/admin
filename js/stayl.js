@@ -48,7 +48,7 @@ let formElement = document.querySelector(".form");
      row3 = newRow.insertCell(3);
      row3.innerHTML = '<button onClick="editForm(this)"> Edit</button>';
      row4 = newRow.insertCell(4);
-     row4.innerHTML = '<button onclick="onDelete(this)">delet</button>';
+     row4.innerHTML = '<button onclick="onDelete(this)">Delet</button>';
 
  }
  function resetForm(){
@@ -59,7 +59,7 @@ let formElement = document.querySelector(".form");
  }
   
       function editForm(td){
-        selectedRow = td.parentElement;
+        selectedRow = td.parentElement.parentElement;
         document.querySelector("#name").value = selectedRow.cells[0].innerHTML;
         document.querySelector("#surname").value = selectedRow.cells[1].innerHTML;
         document.querySelector("#email").value = sleectedRow.cells[2].innerHTML;
@@ -74,6 +74,7 @@ let formElement = document.querySelector(".form");
      
 function onDelete(td){
   row = td.parentElement.parentElement;
+  alert("O'chirishga ruhsatmi")
   document.querySelector("#list").deleteRow(row.rowIndex);
     resetForm();
 

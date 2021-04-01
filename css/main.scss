@@ -85,7 +85,16 @@
                                 border: 1px solid rgb(218, 202, 202);
                                 color: black;
                                  font-size:20px;
-                                padding: 10px 0; 
+                                 height: 50px; 
+                                  button{
+                                      padding: 10px;
+                                      height: 100%;
+                                      width: 100%;
+                                      border: none;
+                                      background-color: rgb(156, 83, 15);
+                                      color: #fff;
+                                      
+                                  }
                                }
                     }
       }
