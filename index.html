@@ -9,40 +9,46 @@
 </head>
 <body>
    <div class="forma">
-    <form class="form">
+    <form class="form" >
           <h1>registiratsiya</h1>
         <label >
               <h2>Name</h2>
-            <input type="text" name="name" class="name" placeholder="Name">
+            <input type="text" name="name" class="name" id="name" placeholder="Name">
         </label>
         <label >
             <h2>Surname</h2>
-            <input type="text" name="surname" class="surname" placeholder="SurName">
+            <input type="text" name="surname" class="surname" id="surname" placeholder="SurName">
         </label>
         <label >
             <h2>Email</h2>
-          <input type="email" name="email" class="email" placeholder="Email">
+          <input type="email" name="email" class="email" id="email" placeholder="Email">
       </label>
         <button>Add</button>
         </form>
    </div>
     
 
-    <table class="table">
-         <tr>
-             <th>№</th>
-             <th>Name</th>
-             <th>SurName</th>
-             <th>Delet</th>
-         </tr>
-         <tr >
+    <table class="table" id="list">
+         <thead>
+            <tr>
+               
+                <th>Name</th>
+                <th>SurName</th>
+                <th>Email</th>
+                <th>Delet</th>
+            </tr>
+         </thead>
+      <tbody>
+        <tr >
             
-             <td>1</td>
-             <td>Abbos</td>
-             <td>najmiddinov</td>
-             <td>delet</td>
-         </tr>
+            
+            <td>Abbos</td>
+            <td>najmiddinov</td>
+            <td>abbosjamiddinov@gmail.com</td>
+            <td>delet</td>
+        </tr>
 
+      </tbody>
 
     </table>
 
